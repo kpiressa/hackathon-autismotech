@@ -1,0 +1,15 @@
+@import '~antd/dist/antd.css';
+
+.ant-table-thead > tr > th {
+    color: rgb(245 240 240);
+    background-color:  #D1753D;
+    text-align: center;   
+}
+
+/*.ant-table-tbody > tr > td {
+    text-align: center;
+}*/
+
+.ant-table table {
+    border: 1px solid #D1753D;
+}

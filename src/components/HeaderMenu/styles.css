@@ -1,0 +1,65 @@
+@import '~antd/dist/antd.css';
+
+.ant-menu {
+    background-color: #fefdfc;
+    float: right;
+}
+
+.ant-menu > li {
+    font-weight: 500;
+    color: #D1753D;
+}
+
+.ant-menu > li:hover, .ant-menu-submenu > div:hover, .ant-menu-item li:hover {
+    font-weight: 500;
+    color: #D1753D !important;
+}
+
+.ant-menu-submenu-popup > .ant-menu {
+    background-color: #fefdfc;
+}
+
+.ant-menu-submenu-title:hover {
+    color: #7d7878 !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+    color: #7d7878 !important;
+}
+
+.ant-menu-item-selected {
+    color: #7d7878 !important;
+}
+
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+    color: #7d7878 !important;
+}
+
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before {
+    background: -webkit-gradient(linear, left top, right top, from(#7d7878), to(#7d7878)) !important;
+    background: linear-gradient(to right, #7d7878, #7d7878) !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    color: #7d7878 !important;
+    border-bottom: 2px solid #7d7878 !important;
+}
