@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+.header-menu {
+    background-color: #fefdfc !important;
+}
+
+.content-side {
+    background-color: #fefdfc !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+}
+
+.content-side-symbol {
+    min-width: 40% !important;
+    max-width: 40% !important;
+    min-height: 550px;
+}
+
+.header-button {
+    color: rgb(245 240 240);
+    background-color:  #D1753D !important;
+    border-radius: 30px !important;
+}
+
+.header-button:hover {
+    transform: scale(1.01);
+}
+
+.header-text {
+    color: rgb(60 57 55) !important;
+}
+
+.home-resume {
+    width: 100%;
+    text-align: "center";
+    display: "flex";
+    flex-wrap: "wrap";
+    align-items: "center";
+    justify-content: "center";
+}
+
+.content-standard {
+    background-color: #fefdfc !important;
+}
+
+.content-title {
+    text-align: center;
+}

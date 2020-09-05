@@ -1,40 +1,38 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
-const { SubMenu } = Menu;
+function goToAnchor(id) {
+  var element = document.getElementById(id);
+
+  element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 
 export class HeaderMenu extends Component {
 
     render() {
         return (
             <Menu mode="horizontal">
-            <Menu.Item key="sobre">
+            <Menu.Item key="sobre" onClick={ () => goToAnchor("quem-somos") }>
               Sobre
             </Menu.Item>
-            <Menu.Item key="empresas-amigas">
+            <Menu.Item key="empresas-amigas" onClick={ () => goToAnchor("empresas-amigas") }>
               Empresas Amigas
             </Menu.Item>
-            <Menu.Item key="pesquise-empresa">
+            <Menu.Item key="pesquise-empresa" onClick={ () => goToAnchor("pesquise-empresa") }>
               Pesquise uma Empresa
-            </Menu.Item>        
-            <SubMenu title="Autistas">
-              <Menu.ItemGroup title="Conheça mais">
-                <Menu.Item key="setting:1">Videoaulas</Menu.Item>
-                <Menu.Item key="setting:2">Acessoria</Menu.Item>
-              </Menu.ItemGroup>
-              <Menu.ItemGroup title="Mercado de trabalho">
-                <Menu.Item key="setting:3">Trabalhe com a gente</Menu.Item>
-              </Menu.ItemGroup>              
-            </SubMenu>
-            <SubMenu title="Empresas">
-              <Menu.ItemGroup title="">
-                <Menu.Item key="setting:1">Videoaulas</Menu.Item>
-                <Menu.Item key="setting:2">Acessoria</Menu.Item>
-                <Menu.Item key="setting:3">Trabalhe com a gente</Menu.Item>
-              </Menu.ItemGroup>
-            </SubMenu>           
+            </Menu.Item>
+            <Menu.Item key="mercado-trabalho" onClick={ () => goToAnchor("mercado-trabalho") }>
+              Mercado de Trabalho
+            </Menu.Item>
+            <Menu.Item key="autistas">
+              <Link to="/autistas">Autistas</Link>
+            </Menu.Item>
+            <Menu.Item key="empresas">
+            <Link to="/empresas">Empresas</Link>
+            </Menu.Item>         
           </Menu>
         );
     }

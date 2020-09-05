@@ -63,3 +63,11 @@
     color: #7d7878 !important;
     border-bottom: 2px solid #7d7878 !important;
 }
+
+a {
+    color: #D1753D !important;
+}
+
+a:hover {
+    color: #7d7878 !important;
+}

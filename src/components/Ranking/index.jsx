@@ -59,56 +59,56 @@ const columns = [
       name: 'FIAP',
       age: 'Ensino Superior',
       address: <Rate disabled defaultValue={5} />,
-      tags: ['fone de ouvido', 'salas climatizadas'],
+      tags: ['apoio', 'adaptações ambientais'],
     },
     {
       key: '2',
       name: 'Magalu',
       age: 'Varejo',
       address: <Rate disabled defaultValue={5} />,
-      tags: ['home office', 'day-off', 'mentoria'],
+      tags: ['home office', 'adaptações ambientais'],
     },
     {
       key: '3',
       name: 'Zup',
       age: 'Tecnologia',
       address: <Rate disabled defaultValue={5} />,
-      tags: ['home office', 'fone de ouvido'],
+      tags: ['home office', 'processos organizados'],
     },
     {
         key: '4',
         name: 'Carrefour',
         age: 'Varejo',
         address: <Rate disabled defaultValue={5} />,
-        tags: ['plr', 'salas climatizadas'],
+        tags: ['apoio', 'adaptações ambientais'],
       },
       {
         key: '5',
         name: 'Avanade',
         age: 'Tecnologia',
         address: <Rate disabled defaultValue={5} />,
-        tags: ['plr'],
+        tags: ['apoio', 'processos organizados'],
       },
       {
         key: '6',
         name: 'Platform Builders',
         age: 'Tecnologia',
         address: <Rate disabled defaultValue={5} />,
-        tags: ['plr'],
+        tags: ['apoio'],
       },
       {
         key: '7',
         name: 'EY',
         age: 'Contabilidade',
         address: <Rate disabled defaultValue={5} />,
-        tags: ['plr'],
+        tags: ['guardião da inclusão'],
       },
       {
         key: '8',
         name: 'Alura',
         age: 'Educação',
         address: <Rate disabled defaultValue={5} />,
-        tags: ['home office', 'plr'],
+        tags: ['home office', 'apoio'],
       },  
   ];
 
@@ -116,9 +116,7 @@ export class Ranking extends Component {
 
     render() {
         return (
-            <div className="ranking-container">
-                <Table columns={columns} dataSource={data} pagination={{defaultPageSize: 10, hideOnSinglePage: true}} />
-            </div>
+          <Table columns={columns} dataSource={data} pagination={{defaultPageSize: 10, hideOnSinglePage: true}} />
         );
     }
 }

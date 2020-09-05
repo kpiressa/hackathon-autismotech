@@ -36,7 +36,7 @@ var sectionStyle = {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundBlendMode: "overlay",
-    backgroundColor: "#5ebed6",
+    backgroundColor: "#D1753D",
     //backgroundImage: `linear-gradient(#5ebed6, #D1753D), url(${HeaderBackground})`,
     backgroundImage: `url(${HeaderBackground})`,
     textAlign: "center",
@@ -53,7 +53,6 @@ var sectionStyle = {
     display: "flex",
     flexWrap: "wrap",
     alignItems: "center",
-    //justifyContent: "center",
   };  
 
   var siderStyle = {
@@ -63,7 +62,7 @@ var sectionStyle = {
     backgroundImage: `url(${AuteraSymbol})`,
   };
 
-export default function Home() {
+export default function Empresas() {
 
     return (
         <Layout className="layout">
@@ -73,10 +72,10 @@ export default function Home() {
         </Header>
         <Content style={ sectionStyle }>
             <div>
-                <Title className="header-text">Autistas trabalhando pela<br/>inclusão de autistas no mercado<br/>de trabalho</Title>
+                <Title className="header-text">Empresas atingindo grandes<br/>resultados com pequenas<br/>mudanças</Title>
                 <p/>
-                <Title level={4} className="header-text">Participe avaliando uma empresa</Title>
-                <Button type="primary" size="large" className="header-button">Avalie uma empresa</Button>
+                <Title level={4} className="header-text">Venha fazer parte também</Title>
+                <Button type="primary" size="large" className="header-button">Faça uma avaliação</Button>
             </div>
         </Content>
         <Layout>
@@ -91,7 +90,7 @@ export default function Home() {
                 <p/><br/><br/>
                 <Title level={2} className="header-text">O que oferecemos?</Title>
                 <p/>
-                <Title level={4} className="header-text">Um espaço para o autista avaliar empresas e<br/>procurar por empresas amigas dos autistas.</Title>
+                <Title level={4} className="header-text">Conteúdo informativo e assessoria para as empresas<br/>que entendem que a diversidade no ambiente de<br/>trabalho traz muitos benefícios, mas <br/>dificuldades no processo adaptativo.</Title>
             </div>
             </Content>
         </Layout>
@@ -138,28 +137,6 @@ export default function Home() {
                 </div>
             </Col>
         </Row>
-            {/*<div style={{ marginLeft: 200, marginRight: 150 }}>
-                <Title level={2} className="header-text" id="pesquise-empresa">Pensando em trabalhar naquela empresa?</Title>
-                <p/>
-                <Title level={4} className="header-text">Confira aqui quais adaptações ela oferece hoje:</Title>
-                <CompanySearch />
-            </div>*/}
-            {/*<div style={{ marginTop: 70, marginBottom: 100 }}>
-                <Title level={5} className="header-text">Autistas possuem vários pontos fortes: cumprimos regras,<br/>
-                adoramos ambientes organizados, temos uma boa<br/>
-                memória para detalhes, nossa linha de raciocínio é<br/>
-                diferente e quando temos a oportunidade de trabalhar<br/>
-                com algo que gostamos nós nos aprofundamos em<br/>
-                detalhes!</Title>
-                <p/>
-                <Title level={5} className="header-text">Algumas adaptações no ambiente de trabalho não só nos<br/>
-                auxiliam no dia a dia, como potencializam as nossas<br/>
-                qualidades.</Title>
-                <p/>
-                <Title level={5} className="header-text">Oferecemos uma pesquisa por empresas e apresentamos<br/>
-                quais critérios elas cumprem, para que tanto empresas<br/>
-                quanto autistas possam oferecer o seu melhor!</Title>
-            </div>*/}
         <Row style={{ backgroundColor: "#fefdfc" }}>
             <Col span={24}>
                 <div style={{ textAlign: "center", marginTop: 100, marginBottom: 100 }}>

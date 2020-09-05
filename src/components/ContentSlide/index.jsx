@@ -3,35 +3,83 @@ import { Carousel } from 'antd';
 
 import './styles.css';
 
+import SlideBackground from '../../assets/home.jfif';
+import Slide2Background from '../../assets/slide1.jpg';
+import Slide3Background from '../../assets/slide2.jpg';
+import Slide4Background from '../../assets/slide3.jpg';
+
 function onChange(a, b, c) {
-    console.log(a, b, c);
-  }
+
+}
   
-const contentStyle = {
+const slide1Style = {
     width: '50%',
     height: '400px',
     color: '#fff',
     lineHeight: '400px',
     textAlign: 'center',
     background: '#364d79',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundImage: `url(${SlideBackground})`,
+};
+
+const slide2Style = {
+  width: '50%',
+  height: '400px',
+  color: '#fff',
+  lineHeight: '400px',
+  textAlign: 'center',
+  background: '#364d79',
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundImage: `url(${Slide2Background})`,
+};
+
+const slide3Style = {
+  width: '50%',
+  height: '400px',
+  color: '#fff',
+  lineHeight: '400px',
+  textAlign: 'center',
+  background: '#364d79',
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundImage: `url(${Slide3Background})`,
+};
+
+const slide4Style = {
+  width: '50%',
+  height: '400px',
+  color: '#fff',
+  lineHeight: '400px',
+  textAlign: 'center',
+  background: '#364d79',
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundImage: `url(${Slide4Background})`,
 };
 
 export class ContentSlide extends Component {
 
     render() {
         return (
-            <Carousel afterChange={onChange}>
+            <Carousel afterChange={onChange} autoplay dots={true} effect="fade">
             <div>
-              <h3 style={contentStyle}>1</h3>
+              <div style={slide1Style} />
             </div>
             <div>
-              <h3 style={contentStyle}>2</h3>
+              <div style={slide2Style} />
             </div>
             <div>
-              <h3 style={contentStyle}>3</h3>
+              <div style={slide3Style} />
             </div>
             <div>
-              <h3 style={contentStyle}>4</h3>
+              <div style={slide4Style} />
             </div>
           </Carousel>
         );
